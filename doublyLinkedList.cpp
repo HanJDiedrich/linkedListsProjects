@@ -65,7 +65,7 @@ SortedList<Key,Value>::SortedList() : head(nullptr)
 
 }
 
-//cCOPY CONSTRUCTOR
+//COPY CONSTRUCTOR
 template<typename Key, typename Value>
 SortedList<Key,Value>::SortedList(const SortedList & st)
 {
