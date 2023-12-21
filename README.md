@@ -38,8 +38,8 @@ bool operator==(const SortedList & l) const noexcept; -- Checks if a sortedList 
 void operator++(); -- Pre-increments every Value in the list
 
 void outputList(); -- Prints out the list in terminal
--------------------------------------------------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------------------------------------------
 
 ---singlyLinkedList.cpp---
 -------------------------------------------------------------------------------------------------------------------------
@@ -67,4 +67,5 @@ const std::string & front() const; -- Returns a unmodifiable version of the firs
 void dequeue(); -- Removes first element in the list, reassigned pointer
 
 void printList(); -- Prints out the list in terminal
+
 -------------------------------------------------------------------------------------------------------------------------
