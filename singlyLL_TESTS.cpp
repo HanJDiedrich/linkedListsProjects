@@ -2,11 +2,10 @@
 
 #include <catch2/catch_all.hpp>
 
-#include "singlyLinkedList.cpp"
+#include "singlyLinkedList.hpp"
 
 TEST_CASE("Singly Linked List Initialization", "[singlyLinkedList]") {
     
     QueueOfStrings a;
-    a.enqueue("Mike");
     REQUIRE(a.isEmpty());
 }

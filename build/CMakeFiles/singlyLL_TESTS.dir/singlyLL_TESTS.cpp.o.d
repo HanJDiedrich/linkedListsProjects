@@ -408,5 +408,5 @@ CMakeFiles/singlyLL_TESTS.dir/singlyLL_TESTS.cpp.o: \
  /home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_tap.hpp \
  /home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_teamcity.hpp \
  /home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_xml.hpp \
- /home/hanjd/projects/c++/linkedListsProjects/singlyLinkedList.cpp \
+ /home/hanjd/projects/c++/linkedListsProjects/singlyLinkedList.hpp \
  /usr/include/c++/11/iostream
