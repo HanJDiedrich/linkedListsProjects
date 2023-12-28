@@ -18,14 +18,10 @@ add_executable(doublyLinkedList doublyLinkedList.cpp)
 add_executable(singlyLinkedList singlyLinkedList.cpp)
 
 # Test files
-add_executable(doublyLL_TESTS doublyLL_TESTS.cpp)
-add_executable(singlyLL_TESTS singlyLL_TESTS.cpp)
-
-#target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+add_executable(TESTSdouble TESTSdouble.cpp)
+add_executable(TESTSsingle TESTSsingle.cpp)
 
 # Link Catch2 with test executables
-target_link_libraries(doublyLL_TESTS PRIVATE Catch2::Catch2WithMain)
-target_link_libraries(singlyLL_TESTS PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(TESTSdouble PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(TESTSsingle PRIVATE Catch2::Catch2WithMain)
 
-#target_include_directories(doublyLL_TESTS PRIVATE ${Catch2_SOURCE_DIR}/single_include)
-#target_include_directories(singlyLL_TESTS PRIVATE ${Catch2_SOURCE_DIR}/single_include)

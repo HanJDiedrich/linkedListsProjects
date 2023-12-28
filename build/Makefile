@@ -143,30 +143,30 @@ singlyLinkedList/fast:
 .PHONY : singlyLinkedList/fast
 
 #=============================================================================
-# Target rules for targets named doublyLL_TESTS
+# Target rules for targets named TESTSdouble
 
 # Build rule for target.
-doublyLL_TESTS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doublyLL_TESTS
-.PHONY : doublyLL_TESTS
+TESTSdouble: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TESTSdouble
+.PHONY : TESTSdouble
 
 # fast build rule for target.
-doublyLL_TESTS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/build
-.PHONY : doublyLL_TESTS/fast
+TESTSdouble/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/build
+.PHONY : TESTSdouble/fast
 
 #=============================================================================
-# Target rules for targets named singlyLL_TESTS
+# Target rules for targets named TESTSsingle
 
 # Build rule for target.
-singlyLL_TESTS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 singlyLL_TESTS
-.PHONY : singlyLL_TESTS
+TESTSsingle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TESTSsingle
+.PHONY : TESTSsingle
 
 # fast build rule for target.
-singlyLL_TESTS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/build
-.PHONY : singlyLL_TESTS/fast
+TESTSsingle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/build
+.PHONY : TESTSsingle/fast
 
 #=============================================================================
 # Target rules for targets named Catch2
@@ -194,29 +194,53 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
-doublyLL_TESTS.o: doublyLL_TESTS.cpp.o
-.PHONY : doublyLL_TESTS.o
+TESTSdouble.o: TESTSdouble.cpp.o
+.PHONY : TESTSdouble.o
 
 # target to build an object file
-doublyLL_TESTS.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/doublyLL_TESTS.cpp.o
-.PHONY : doublyLL_TESTS.cpp.o
+TESTSdouble.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/TESTSdouble.cpp.o
+.PHONY : TESTSdouble.cpp.o
 
-doublyLL_TESTS.i: doublyLL_TESTS.cpp.i
-.PHONY : doublyLL_TESTS.i
+TESTSdouble.i: TESTSdouble.cpp.i
+.PHONY : TESTSdouble.i
 
 # target to preprocess a source file
-doublyLL_TESTS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/doublyLL_TESTS.cpp.i
-.PHONY : doublyLL_TESTS.cpp.i
+TESTSdouble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/TESTSdouble.cpp.i
+.PHONY : TESTSdouble.cpp.i
 
-doublyLL_TESTS.s: doublyLL_TESTS.cpp.s
-.PHONY : doublyLL_TESTS.s
+TESTSdouble.s: TESTSdouble.cpp.s
+.PHONY : TESTSdouble.s
 
 # target to generate assembly for a file
-doublyLL_TESTS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/doublyLL_TESTS.cpp.s
-.PHONY : doublyLL_TESTS.cpp.s
+TESTSdouble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/TESTSdouble.cpp.s
+.PHONY : TESTSdouble.cpp.s
+
+TESTSsingle.o: TESTSsingle.cpp.o
+.PHONY : TESTSsingle.o
+
+# target to build an object file
+TESTSsingle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/TESTSsingle.cpp.o
+.PHONY : TESTSsingle.cpp.o
+
+TESTSsingle.i: TESTSsingle.cpp.i
+.PHONY : TESTSsingle.i
+
+# target to preprocess a source file
+TESTSsingle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/TESTSsingle.cpp.i
+.PHONY : TESTSsingle.cpp.i
+
+TESTSsingle.s: TESTSsingle.cpp.s
+.PHONY : TESTSsingle.s
+
+# target to generate assembly for a file
+TESTSsingle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/TESTSsingle.cpp.s
+.PHONY : TESTSsingle.cpp.s
 
 doublyLinkedList.o: doublyLinkedList.cpp.o
 .PHONY : doublyLinkedList.o
@@ -241,30 +265,6 @@ doublyLinkedList.s: doublyLinkedList.cpp.s
 doublyLinkedList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLinkedList.dir/build.make CMakeFiles/doublyLinkedList.dir/doublyLinkedList.cpp.s
 .PHONY : doublyLinkedList.cpp.s
-
-singlyLL_TESTS.o: singlyLL_TESTS.cpp.o
-.PHONY : singlyLL_TESTS.o
-
-# target to build an object file
-singlyLL_TESTS.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/singlyLL_TESTS.cpp.o
-.PHONY : singlyLL_TESTS.cpp.o
-
-singlyLL_TESTS.i: singlyLL_TESTS.cpp.i
-.PHONY : singlyLL_TESTS.i
-
-# target to preprocess a source file
-singlyLL_TESTS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/singlyLL_TESTS.cpp.i
-.PHONY : singlyLL_TESTS.cpp.i
-
-singlyLL_TESTS.s: singlyLL_TESTS.cpp.s
-.PHONY : singlyLL_TESTS.s
-
-# target to generate assembly for a file
-singlyLL_TESTS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/singlyLL_TESTS.cpp.s
-.PHONY : singlyLL_TESTS.cpp.s
 
 singlyLinkedList.o: singlyLinkedList.cpp.o
 .PHONY : singlyLinkedList.o
@@ -300,19 +300,19 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
-	@echo "... doublyLL_TESTS"
+	@echo "... TESTSdouble"
+	@echo "... TESTSsingle"
 	@echo "... doublyLinkedList"
-	@echo "... singlyLL_TESTS"
 	@echo "... singlyLinkedList"
-	@echo "... doublyLL_TESTS.o"
-	@echo "... doublyLL_TESTS.i"
-	@echo "... doublyLL_TESTS.s"
+	@echo "... TESTSdouble.o"
+	@echo "... TESTSdouble.i"
+	@echo "... TESTSdouble.s"
+	@echo "... TESTSsingle.o"
+	@echo "... TESTSsingle.i"
+	@echo "... TESTSsingle.s"
 	@echo "... doublyLinkedList.o"
 	@echo "... doublyLinkedList.i"
 	@echo "... doublyLinkedList.s"
-	@echo "... singlyLL_TESTS.o"
-	@echo "... singlyLL_TESTS.i"
-	@echo "... singlyLL_TESTS.s"
 	@echo "... singlyLinkedList.o"
 	@echo "... singlyLinkedList.i"
 	@echo "... singlyLinkedList.s"

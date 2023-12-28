@@ -5,7 +5,7 @@
 #include "doublyLinkedList.hpp"
 
 
-TEST_CASE("SIZE_ONLY_TEST", "[MYTEST]")
+TEST_CASE("Size", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l;
     //l.insert(1, "One");
@@ -13,7 +13,7 @@ TEST_CASE("SIZE_ONLY_TEST", "[MYTEST]")
     REQUIRE(l.size() == 0);
 }
 
-TEST_CASE("PreliminaryTests", "[MYTEST]")
+TEST_CASE("BasicCumulative", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l;
     l.insert(1, "One");
@@ -41,7 +41,7 @@ TEST_CASE("ReverseInserts", "[MYTEST]")
     REQUIRE(! l.contains(0) );
 }
 
-TEST_CASE("MyFirstRemovals1", "[MYTEST]")
+TEST_CASE("Removal1", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l;
     l.insert(1, "One");
@@ -54,7 +54,7 @@ TEST_CASE("MyFirstRemovals1", "[MYTEST]")
     REQUIRE(! l.contains(4) );
 }
 
-TEST_CASE("MyFirstRemovals2", "[MYTEST]")
+TEST_CASE("Removal2", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l;
     l.insert(1, "One");
@@ -67,7 +67,7 @@ TEST_CASE("MyFirstRemovals2", "[MYTEST]")
     REQUIRE(! l.contains(4) );
 }
 
-TEST_CASE("MyFirstRemovals3", "[MYTEST]")
+TEST_CASE("Removal3", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l;
     l.insert(1, "One");
@@ -82,7 +82,6 @@ TEST_CASE("MyFirstRemovals3", "[MYTEST]")
 
 TEST_CASE("ContainsWithCarmichaelNumbers", "[MYTEST]")
 {
-    // because Carmichael numbers are fun
     SortedList<unsigned, std::string> cms;
     cms.insert(561, "First");
     cms.insert(1105, "Second");
@@ -167,7 +166,7 @@ TEST_CASE("SmallestGreaterThanTest2", "[MYTEST]")
     REQUIRE( cms.smallestGreaterThan(2048) == 2465 );
 
 }
-TEST_CASE("EveryonesCopyAndAssignmentOperatorCanBeGraded", "[MYTEST]")
+TEST_CASE("CopyAndAssignmenttOperator", "[MYTEST]")
 {
     SortedList<unsigned, std::string> s1;//add stuff
     SortedList<unsigned, std::string> s2;
@@ -218,7 +217,6 @@ TEST_CASE("SubscriptOperatorReturnsReference", "[MYTEST]")
     cms.insert(1105, "Secnod");
     cms.insert(1729, "Thrid");
     cms.insert(2465, "Fourth");
-    // oops, let's fix those typos.
     cms[1105] = "Second";
     cms[1729] = "Third";
     REQUIRE(cms[561] == "First");
@@ -236,9 +234,7 @@ TEST_CASE("TESTING_CONST", "[MYTEST]")
     REQUIRE(constList[561] == "First");
     REQUIRE(constList[1105] == "Second");
 }
-
-
-TEST_CASE("SimpleTestsOfEquality", "[MYTEST]")
+TEST_CASE("Equality=", "[MYTEST]")
 {
     SortedList<unsigned, std::string> l1;
     SortedList<unsigned, std::string> l2;
@@ -249,11 +245,11 @@ TEST_CASE("SimpleTestsOfEquality", "[MYTEST]")
     REQUIRE(l1==l2);
 }
 
-TEST_CASE("Testing++Operator", "[MYTEST]")
+TEST_CASE("++Operator", "[MYTEST]")
 {
     SortedList<std::string, unsigned> numbers;
-    numbers.insert("Jenny", 8675309);
+    numbers.insert("Han", 123456789);
     ++numbers;
-    REQUIRE(numbers["Jenny"] == 8675310);
+    REQUIRE(numbers["Han"] == 123456790);
 }
 

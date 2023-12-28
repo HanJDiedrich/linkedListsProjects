@@ -65,8 +65,8 @@ CMAKE_BINARY_DIR = /home/hanjd/projects/c++/linkedListsProjects/build
 # The main recursive "all" target.
 all: CMakeFiles/doublyLinkedList.dir/all
 all: CMakeFiles/singlyLinkedList.dir/all
-all: CMakeFiles/doublyLL_TESTS.dir/all
-all: CMakeFiles/singlyLL_TESTS.dir/all
+all: CMakeFiles/TESTSdouble.dir/all
+all: CMakeFiles/TESTSsingle.dir/all
 all: _deps/catch2-build/all
 .PHONY : all
 
@@ -77,8 +77,8 @@ preinstall: _deps/catch2-build/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/doublyLinkedList.dir/clean
 clean: CMakeFiles/singlyLinkedList.dir/clean
-clean: CMakeFiles/doublyLL_TESTS.dir/clean
-clean: CMakeFiles/singlyLL_TESTS.dir/clean
+clean: CMakeFiles/TESTSdouble.dir/clean
+clean: CMakeFiles/TESTSsingle.dir/clean
 clean: _deps/catch2-build/clean
 .PHONY : clean
 
@@ -121,7 +121,7 @@ _deps/catch2-build/src/clean: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.d
 CMakeFiles/doublyLinkedList.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLinkedList.dir/build.make CMakeFiles/doublyLinkedList.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLinkedList.dir/build.make CMakeFiles/doublyLinkedList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=95,96 "Built target doublyLinkedList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=97,98 "Built target doublyLinkedList"
 .PHONY : CMakeFiles/doublyLinkedList.dir/all
 
 # Build rule for subdir invocation for target.
@@ -167,58 +167,58 @@ CMakeFiles/singlyLinkedList.dir/clean:
 .PHONY : CMakeFiles/singlyLinkedList.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/doublyLL_TESTS.dir
+# Target rules for target CMakeFiles/TESTSdouble.dir
 
 # All Build rule for target.
-CMakeFiles/doublyLL_TESTS.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
-CMakeFiles/doublyLL_TESTS.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=94 "Built target doublyLL_TESTS"
-.PHONY : CMakeFiles/doublyLL_TESTS.dir/all
+CMakeFiles/TESTSdouble.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
+CMakeFiles/TESTSdouble.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=94 "Built target TESTSdouble"
+.PHONY : CMakeFiles/TESTSdouble.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/doublyLL_TESTS.dir/rule: cmake_check_build_system
+CMakeFiles/TESTSdouble.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles 94
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doublyLL_TESTS.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TESTSdouble.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles 0
-.PHONY : CMakeFiles/doublyLL_TESTS.dir/rule
+.PHONY : CMakeFiles/TESTSdouble.dir/rule
 
 # Convenience name for target.
-doublyLL_TESTS: CMakeFiles/doublyLL_TESTS.dir/rule
-.PHONY : doublyLL_TESTS
+TESTSdouble: CMakeFiles/TESTSdouble.dir/rule
+.PHONY : TESTSdouble
 
 # clean rule for target.
-CMakeFiles/doublyLL_TESTS.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doublyLL_TESTS.dir/build.make CMakeFiles/doublyLL_TESTS.dir/clean
-.PHONY : CMakeFiles/doublyLL_TESTS.dir/clean
+CMakeFiles/TESTSdouble.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSdouble.dir/build.make CMakeFiles/TESTSdouble.dir/clean
+.PHONY : CMakeFiles/TESTSdouble.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/singlyLL_TESTS.dir
+# Target rules for target CMakeFiles/TESTSsingle.dir
 
 # All Build rule for target.
-CMakeFiles/singlyLL_TESTS.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
-CMakeFiles/singlyLL_TESTS.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=97,98 "Built target singlyLL_TESTS"
-.PHONY : CMakeFiles/singlyLL_TESTS.dir/all
+CMakeFiles/TESTSsingle.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
+CMakeFiles/TESTSsingle.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles --progress-num=95,96 "Built target TESTSsingle"
+.PHONY : CMakeFiles/TESTSsingle.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/singlyLL_TESTS.dir/rule: cmake_check_build_system
+CMakeFiles/TESTSsingle.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles 95
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/singlyLL_TESTS.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TESTSsingle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles 0
-.PHONY : CMakeFiles/singlyLL_TESTS.dir/rule
+.PHONY : CMakeFiles/TESTSsingle.dir/rule
 
 # Convenience name for target.
-singlyLL_TESTS: CMakeFiles/singlyLL_TESTS.dir/rule
-.PHONY : singlyLL_TESTS
+TESTSsingle: CMakeFiles/TESTSsingle.dir/rule
+.PHONY : TESTSsingle
 
 # clean rule for target.
-CMakeFiles/singlyLL_TESTS.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/singlyLL_TESTS.dir/build.make CMakeFiles/singlyLL_TESTS.dir/clean
-.PHONY : CMakeFiles/singlyLL_TESTS.dir/clean
+CMakeFiles/TESTSsingle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TESTSsingle.dir/build.make CMakeFiles/TESTSsingle.dir/clean
+.PHONY : CMakeFiles/TESTSsingle.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/catch2-build/src/CMakeFiles/Catch2.dir

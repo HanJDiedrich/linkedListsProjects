@@ -68,8 +68,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/doublyLinkedList.dir/DependInfo.cmake"
   "CMakeFiles/singlyLinkedList.dir/DependInfo.cmake"
-  "CMakeFiles/doublyLL_TESTS.dir/DependInfo.cmake"
-  "CMakeFiles/singlyLL_TESTS.dir/DependInfo.cmake"
+  "CMakeFiles/TESTSdouble.dir/DependInfo.cmake"
+  "CMakeFiles/TESTSsingle.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )
