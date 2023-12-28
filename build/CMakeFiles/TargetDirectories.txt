@@ -1,0 +1,12 @@
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/doublyLinkedList.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/singlyLinkedList.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/doublyLL_TESTS.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/singlyLL_TESTS.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/edit_cache.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/CMakeFiles/rebuild_cache.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/home/hanjd/projects/c++/linkedListsProjects/build/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir

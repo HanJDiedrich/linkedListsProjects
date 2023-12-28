@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 #include <stdexcept>
+#include "singlyLinkedList.hpp"
 
+/*.hpp file
 class QueueEmptyException : public std::runtime_error 
 {
 public:
@@ -45,6 +47,7 @@ public:
 
 	void printList();
 };
+*/
 
 //Constructor
 QueueOfStrings::QueueOfStrings(): head(nullptr) //:variable{0}
